@@ -36,6 +36,18 @@ export const projectsData = [
 		web: "https://elheraldo.herokuapp.com",
 	},
 ];
+export const clientsData = [
+	{
+		name: "Rotary Distrito 4895",
+		img: "./assets/img/rotary.png",
+		href: "https://www.instagram.com/rotary4895/",
+	},
+	{
+		name:'Hiparquia Indumentaria',
+		img: './assets/img/hiparquia.png',
+		href: "https://www.instagram.com/hiparquiaindumentaria/"
+	},
+];
 export const teamData = [
 	{
 		name: "Joseph Gavidia",
@@ -53,3 +65,9 @@ export const teamData = [
 		img: "https://gcdn.emol.cl/virales/files/2016/07/facebook-inteligencia.jpg",
 	},
 ];
+export default [
+	servicesData,
+	projectsData,
+	clientsData,
+	teamData
+]

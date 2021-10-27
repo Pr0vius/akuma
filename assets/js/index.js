@@ -1,15 +1,17 @@
-import { projectsData, servicesData, teamData } from "./utils/data.js";
-import {
-	getProjectCardTemplate,
-	getServiceTemplate,
-	getWorkerTemplate,
-} from "./utils/funtions.js";
+import data from "./utils/data.js";
+import templates from "./utils/templates.js";
+import { renderDynamicContent, getElements } from "./utils/functions.js";
+const navbar = document.querySelector('.navbar')
+const selectors = [
+	".services__list",
+	".project-list",
+	".clients",
+	".los-pibes",
+];
 
-const navbar = document.querySelector(".navbar");
-const serviceList = document.querySelector(".services__list");
-const projectList = document.querySelector(".project-list");
-const workers = document.querySelector(".los-pibes");
-const domain = `${location.protocol}//${location.hostname}`;
+const elements = getElements(selectors)
+
+data.forEach((e,i) => renderDynamicContent(e, elements[i], templates[i]))
 
 document.addEventListener("scroll", e => {
 	if (window.scrollY >= 200 && !navbar.classList.contains("fixed")) {
@@ -19,11 +21,3 @@ document.addEventListener("scroll", e => {
 		navbar.classList.remove("fixed");
 	}
 });
-
-servicesData.forEach(e => {
-	serviceList.innerHTML += getServiceTemplate(e);
-});
-projectsData.forEach(e => (projectList.innerHTML += getProjectCardTemplate(e)));
-teamData.forEach(e=>{workers.innerHTML += getWorkerTemplate(e)})
-const card = document.getElementsByClassName("card");
-console.log(card.offsetWidth);

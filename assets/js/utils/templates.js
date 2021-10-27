@@ -1,4 +1,4 @@
-export const getServiceTemplate = e => {
+const getServiceTemplate = e => {
 	return `
     <li class="col-12 col-md-6">
       <h3 class="service__title">${e.name}</h3>
@@ -8,7 +8,7 @@ export const getServiceTemplate = e => {
     </li>
   `;
 };
-export const getProjectCardTemplate = e => {
+const getProjectCardTemplate = e => {
 	return `
     <div class="col-12 col-xs-12 col-sm-6 col-lg-3">
       <div class="card my-2" style="width: 100%">
@@ -24,7 +24,16 @@ export const getProjectCardTemplate = e => {
     </div>
   `;
 };
-export const getWorkerTemplate = e => {
+const getClientsTemplate = e => {
+  return `
+    <div>
+      <a href="${e.href}">
+        <img class="client__logo" src="${e.img}" alt="${e.name}" />
+      </a>
+    </div>
+    `
+}
+const getWorkerTemplate = e => {
   return `
     <div class="col-12 col-md-4 text-center my-3">
       <img class="los-pibes__img rounded-circle" src="${e.img}" alt="${e.name}">
@@ -33,3 +42,9 @@ export const getWorkerTemplate = e => {
     </div>
   `
 }
+export default [
+  getServiceTemplate,
+  getProjectCardTemplate,
+  getClientsTemplate,
+  getWorkerTemplate
+]

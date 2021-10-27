@@ -169,6 +169,18 @@ ul{
 }
 /* !ABOUT US */
 
+/* Clients */
+.client__logo {
+	max-height: 125px;
+	max-width: 45vw;
+	filter: grayscale(1);
+	opacity: .5;
+}
+.client__logo:hover{
+	filter: grayscale(0);
+	opacity: 1;
+}
+/* !Clients */
 /* Animation */
 @-o-keyframes animation {
 	100% {
