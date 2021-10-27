@@ -26,7 +26,7 @@ export const getProjectCardTemplate = e => {
 };
 export const getWorkerTemplate = e => {
   return `
-    <div class="col-12 col-md-4 text-center">
+    <div class="col-12 col-md-4 text-center my-3">
       <img class="los-pibes__img rounded-circle" src="${e.img}" alt="${e.name}">
       <span class="h4 d-block my-2">${e.name}</span>
       <a href="${e.linkedinUrl}" class="btn btn-primary w-50">LinkedIn</a>
