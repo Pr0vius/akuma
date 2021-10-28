@@ -7,6 +7,7 @@ const selectors = [
 	".project-list",
 	".clients",
 	".los-pibes",
+	".contact-info"
 ];
 
 const elements = getElements(selectors)

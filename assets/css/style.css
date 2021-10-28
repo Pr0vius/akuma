@@ -2,13 +2,13 @@
 /* Globals */
 * {
 	box-sizing: border-box;
-	/* font-family: "Rubik", sans-serif; */
 }
-a{
+
+a {
 	text-decoration: none;
 	color: inherit;
 }
-ul{
+ul {
 	padding: 0;
 	list-style: none;
 }
@@ -17,11 +17,15 @@ ul{
 .display-3,
 .display-4,
 .display-5,
-.display-6{
+.display-6 {
 	font-weight: 500;
 }
 /* !Globals */
-
+.header__content,
+#servicios,
+#nosotros {
+	text-align: center;
+}
 /* Nav */
 .navbar {
 	transition: height 0.5s;
@@ -66,7 +70,7 @@ ul{
 /* Header */
 .header {
 	height: 100vh;
-	min-height:620px;
+	min-height: 620px;
 	background-image: url(../img/pen-gad3fe0df4_1920.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -106,7 +110,7 @@ ul{
 }
 .header__content > h2 {
 	font-weight: 500;
-} 
+}
 .header__content > a > img {
 	width: 60px;
 }
@@ -120,13 +124,13 @@ ul{
 	max-height: 640px;
 	background-color: #fff;
 	box-sizing: border-box;
-	border: .5rem solid #000;
+	border: 0.5rem solid #000;
 	border-radius: 45px;
-  display: flex;
-  justify-content: center;
-  position: relative;
+	display: flex;
+	justify-content: center;
+	position: relative;
 	top: 2rem;
-	margin:  auto;
+	margin: auto;
 }
 .phone::before {
 	content: "";
@@ -134,34 +138,45 @@ ul{
 	width: 50%;
 	height: 1rem;
 	background-color: #000;
-  border-radius:0 0 .5rem .5rem;
+	border-radius: 0 0 0.5rem 0.5rem;
 	position: absolute;
-	top:-1px;
+	top: -1px;
 }
-.phone::after{
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: #000;
-  width: .8rem;
-  height: 15vw;
-  max-height: 5rem;
-  top: 5rem;
-  left: 100%;
+.phone::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #000;
+	width: 0.8rem;
+	height: 15vw;
+	max-height: 5rem;
+	top: 5rem;
+	left: 100%;
 	border-radius: 5px;
 }
 /* !Phone Slider */
 /* PORTFOLIO */
-.card-img-top{
+.project.card {
+	overflow: hidden;
+}
+.project.card > .card-img-top {
 	height: 100%;
 	height: 70vw;
 	max-height: 300px;
 	object-fit: cover;
+	object-position: center !important;
+	transition: width 1s;
+}
+.project.card:hover > .card-img-top {
+	width: 110%;
+}
+.card-body {
+	z-index: 100 !important;
 }
 /* !PORTFOLIO */
 
 /* ABOUT US */
-.los-pibes__img{
+.los-pibes__img {
 	width: 250px;
 	height: 250px;
 	object-fit: cover;
@@ -174,13 +189,56 @@ ul{
 	max-height: 125px;
 	max-width: 45vw;
 	filter: grayscale(1);
-	opacity: .5;
+	opacity: 0.5;
 }
-.client__logo:hover{
+.client__logo:hover {
 	filter: grayscale(0);
 	opacity: 1;
 }
 /* !Clients */
+/* Contact */
+.contact-ctn {
+	color: #fff;
+	background: rgb(69, 130, 236);
+	background: -moz-linear-gradient(
+		0deg,
+		rgba(69, 130, 236, 1) 0%,
+		rgba(133, 163, 215, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		0deg,
+		rgba(69, 130, 236, 1) 0%,
+		rgba(133, 163, 215, 1) 100%
+	);
+	background: linear-gradient(
+		0deg,
+		rgba(69, 130, 236, 1) 0%,
+		rgba(133, 163, 215, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4582ec",endColorstr="#85a3d7",GradientType=1);
+}
+/* !Contact */
+@media screen and (min-width: 576px) {
+	.project.card > .card-img-top {
+		max-height: 150px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#servicios,
+	#nosotros {
+		text-align: start;
+	}
+
+	.project.card > .card-img-top {
+		max-height: 200px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.project.card > .card-img-top {
+		max-height: 150px;
+	}
+}
 /* Animation */
 @-o-keyframes animation {
 	100% {

@@ -1,4 +1,4 @@
-export const servicesData = [
+const servicesData = [
 	{
 		name: "Responsive Design",
 		description:
@@ -24,7 +24,7 @@ export const servicesData = [
 		img: "",
 	},
 ];
-export const projectsData = [
+const projectsData = [
 	{
 		name: "Castro Barros 973",
 		img: "assets/img/20200127191643-4dqyrkyb8-__(1849x820).png",
@@ -36,19 +36,19 @@ export const projectsData = [
 		web: "https://elheraldo.herokuapp.com",
 	},
 ];
-export const clientsData = [
+const clientsData = [
 	{
 		name: "Rotary Distrito 4895",
 		img: "./assets/img/rotary.png",
 		href: "https://www.instagram.com/rotary4895/",
 	},
 	{
-		name:'Hiparquia Indumentaria',
-		img: './assets/img/hiparquia.png',
-		href: "https://www.instagram.com/hiparquiaindumentaria/"
+		name: "Hiparquia Indumentaria",
+		img: "./assets/img/hiparquia.png",
+		href: "https://www.instagram.com/hiparquiaindumentaria/",
 	},
 ];
-export const teamData = [
+const teamData = [
 	{
 		name: "Joseph Gavidia",
 		linkedinUrl: "#",
@@ -65,9 +65,30 @@ export const teamData = [
 		img: "https://gcdn.emol.cl/virales/files/2016/07/facebook-inteligencia.jpg",
 	},
 ];
-export default [
-	servicesData,
-	projectsData,
-	clientsData,
-	teamData
-]
+const contactData = [
+	{
+		faIcon: "far fa-envelope",
+		medium: "E-mail",
+		value: "+54 9 11 3388-4431",
+		href: "mailto:contact@akumasoftware.com",
+	},
+	{
+		faIcon: "fab fa-whatsapp",
+		medium: "WhatsApp",
+		value: "+54 9 11 3388-4431",
+		href: "https://api.whatsapp.com/send?phone=5491133884431",
+	},
+	{
+		faIcon: "fas fa-phone-alt",
+		medium: "Teléfono",
+		value: "+54 9 11 6963-6574",
+		href: "tel:+5491169636574",
+	},
+	{
+		faIcon: "fab fa-instagram",
+		medium: "Instagram",
+		value: "@akumasoftware",
+		href: "https://www.instagram.com/akumasoftware/",
+	},
+];
+export default [servicesData, projectsData, clientsData, teamData, contactData];
