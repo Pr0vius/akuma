@@ -5,7 +5,7 @@ const navbar = document.querySelector('.navbar')
 const nav = document.querySelector('.nav-ctn')
 const menuBtn = document.querySelector('#nav-btn')
 const overlay = document.querySelector('.overlay');
-const navLinks = document.querySelectorAll('.nav-link')
+const navLinks = document.querySelectorAll('.nav-item')
 const selectors = [
 	".services__list",
 	".project-list",
