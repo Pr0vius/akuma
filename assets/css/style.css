@@ -23,6 +23,7 @@ ul {
 /* !Globals */
 .header__content,
 #servicios,
+#portfolio,
 #nosotros {
 	text-align: center;
 }
@@ -341,6 +342,7 @@ ul {
 
 @media screen and (min-width: 768px) {
 	#servicios,
+	#portfolio,
 	#nosotros {
 		text-align: start;
 	}
