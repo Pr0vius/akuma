@@ -51,25 +51,25 @@ const clientsData = [
 const teamData = [
 	{
 		name: "Joseph Gavidia",
-		linkedinUrl: "#",
+		linkedinUrl: "https://www.linkedin.com/in/joseph-gavidia/",
 		img: "https://gcdn.emol.cl/virales/files/2016/07/facebook-inteligencia.jpg",
 	},
 	{
 		name: "Brian Delgado",
-		linkedinUrl: "#",
-		img: "https://gcdn.emol.cl/virales/files/2016/07/facebook-inteligencia.jpg",
+		linkedinUrl: "https://www.linkedin.com/in/braian-delgado/",
+		img: "./assets/img/braian.jpg",
 	},
 	{
 		name: "Tomas Tonina",
-		linkedinUrl: "#",
-		img: "https://gcdn.emol.cl/virales/files/2016/07/facebook-inteligencia.jpg",
+		linkedinUrl: "https://www.linkedin.com/in/tomas-tonina/",
+		img: "./assets/img/tony.jpeg",
 	},
 ];
 const contactData = [
 	{
 		faIcon: "far fa-envelope",
 		medium: "E-mail",
-		value: "+54 9 11 3388-4431",
+		value: "contact@akumasoftware.com",
 		href: "mailto:contact@akumasoftware.com",
 	},
 	{
