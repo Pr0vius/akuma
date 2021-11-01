@@ -2,7 +2,7 @@
 $domain = parse_url($_SERVER['HTTP_REFERER']);
 
 if (isset($domain['host'])) {
-  if($domain['host'] == 'akumasoftware'){
+  if($domain['host'] == 'akumasoftware.com'){
     $name = $_POST["name"];
     $mailFrom = $_POST["email"];
     $phone = $_POST["phone"];
@@ -17,6 +17,6 @@ if (isset($domain['host'])) {
     echo 'mail sended';
   }
   else{
-    echo $domain['host'];
+    echo 'domain not registered';
   }
 }

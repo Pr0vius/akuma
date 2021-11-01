@@ -1,3 +1,4 @@
+`use strict`;
 import data from "./utils/data.js";
 import templates from "./utils/templates.js";
 import {
@@ -52,17 +53,15 @@ document.addEventListener("scroll", e => {
 
 contactForm.addEventListener("submit", async e => {
   e.preventDefault();
-  // sendMail(contactForm)
-  //   .then(e => {
-  //     renderSuccessMessage();
-  //     disableFormSuccess();
-  //   })
-  //   .catch(e => {
-  //     renderFailedMessage();
-  //   });
-  sendMail(contactForm)
-    .then(e => e.text())
-    .then(e => console.log(e));
+  const res = await sendMail(contactForm);
+  res.text().then(e => {
+    if (e == "mail sended") {
+      renderSuccessMessage();
+      disableFormSuccess();
+    } else {
+      renderFailedMessage();
+    }
+  });
 });
 
 window.addEventListener("load", e => {
