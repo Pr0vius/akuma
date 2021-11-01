@@ -3,31 +3,31 @@ const servicesData = [
 		name: "Responsive Design",
 		description:
 			"Diseñamos una página para tu negocio apta para que pueda ser vista desde cualquier dispositivo sin que la experiencia del usuario se vea perjudicada.",
-		img: "./assets/icons/Responsive.svg",
+		img: "https://akumasoftware.com/assets/icons/Responsive.svg",
 	},
 	{
 		name: "Marketing Digital",
 		description:
 			"Utilizamos las redes sociales más importantes para darle la mayor visibilidad a tu negocio y potenciar las posibilidades de ventas!",
-		img: "./assets/icons/Trending.svg",
+		img: "https://akumasoftware.com/assets/icons/Trending.svg",
 	},
 	{
 		name: "Catálogo Online",
 		description:
 			"Nos encargamos de la creación y administración del catálogo y la publicación de los productos dentro de la página, en tus redes sociales y en MercadoLibre.",
-		img: "./assets/icons/Catalogue.svg",
+		img: "https://akumasoftware.com/assets/icons/Catalogue.svg",
 	},
 	{
 		name: "Asesoramiento Online",
 		description:
 			"Te ayudamos y orientamos en el recorrido de digitalizar tu negocio para que puedas estar seguro de cada paso que das!",
-		img: "./assets/icons/HappyEmoji.svg",
+		img: "https://akumasoftware.com/assets/icons/HappyEmoji.svg",
 	},
 ];
 const projectsData = [
 	{
 		name: "Castro Barros 973",
-		img: "assets/img/20200127191643-4dqyrkyb8-__(1849x820).png",
+		img: "https://akumasoftware.com/assets/img/20200127191643-4dqyrkyb8-__(1849x820).png",
 		web: "https://castrobarros93.com.ar",
 	},
 	{
@@ -52,17 +52,17 @@ const teamData = [
 	{
 		name: "Joseph Gavidia",
 		linkedinUrl: "https://www.linkedin.com/in/joseph-gavidia/",
-		img: "https://gcdn.emol.cl/virales/files/2016/07/facebook-inteligencia.jpg",
+		img: "https://akumasoftware.com/assets/img/joseph.webp",
 	},
 	{
 		name: "Brian Delgado",
 		linkedinUrl: "https://www.linkedin.com/in/braian-delgado/",
-		img: "./assets/img/braian.jpg",
+		img: "https://akumasoftware.com/assets/img/braian.jpg",
 	},
 	{
 		name: "Tomas Tonina",
 		linkedinUrl: "https://www.linkedin.com/in/tomas-tonina/",
-		img: "./assets/img/tony.jpeg",
+		img: "https://akumasoftware.com/assets/img/tony.jpeg",
 	},
 ];
 const contactData = [
