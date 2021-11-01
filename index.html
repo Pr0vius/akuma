@@ -16,6 +16,7 @@
       src="https://kit.fontawesome.com/63016631d3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Akuma Software</title>
   </head>
   <body>
@@ -167,9 +168,12 @@
                   rows="3"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-outline-light">
-                Enviar
-              </button>
+              <div class="d-flex justify-content-around align-items-center">
+                <button type="submit" class="btn btn-outline-light h-50">
+                  Enviar
+                </button>
+                <div class="g-recaptcha" data-sitekey="6LeAKwodAAAAAE3S4A4MN53TI5acbTe8FbTYmDl3"></div>
+              </div>
             </form>
             <div class="col-12 col-lg-5">
               <h2 class="display-5 my-3">Información</h2>
