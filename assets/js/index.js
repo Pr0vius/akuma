@@ -52,14 +52,17 @@ document.addEventListener("scroll", e => {
 
 contactForm.addEventListener("submit", async e => {
   e.preventDefault();
+  // sendMail(contactForm)
+  //   .then(e => {
+  //     renderSuccessMessage();
+  //     disableFormSuccess();
+  //   })
+  //   .catch(e => {
+  //     renderFailedMessage();
+  //   });
   sendMail(contactForm)
-    .then(e => {
-      renderSuccessMessage();
-      disableFormSuccess();
-    })
-    .catch(e => {
-      renderFailedMessage();
-    });
+    .then(e => e.text())
+    .then(e => console.log(e));
 });
 
 window.addEventListener("load", e => {

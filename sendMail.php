@@ -17,6 +17,6 @@ if (isset($domain['host'])) {
     echo 'mail sended';
   }
   else{
-    echo "Domain not registered";
+    echo $domain['host'];
   }
 }
