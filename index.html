@@ -1,168 +1,190 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="assets/css/normalize.css" />
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<script
-			src="https://kit.fontawesome.com/63016631d3.js"
-			crossorigin="anonymous"
-		></script>
-		<title>Akuma Software</title>
-	</head>
-	<body>
-		<nav class="navbar navbar-dark position-fixed top-0 vw-100">
-			<div class="container">
-				<a href="#" class="navbar-brand p-0">
-					<img
-						class="nav-logo me-2"
-						src="assets/icons/AkumaOnlyLogo.svg"
-						alt="Akuma Software Logo"
-					/>Akuma Software
-				</a>
-				<button id="nav-btn">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-				<div class="nav-ctn ms-auto">
-					<ul class="nav">
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#servicios"><b>Servicios</b></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#portfolio"><b>Portfolio</b></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#nosotros"><b>Nosotros</b></a>
-						</li>
-						<li class="nav-item">
-							<a class="btn btn-primary text-white" href="#contacto"><b>Contactanos</b></a>
-						</li>
-					</ul>
-				</div>
-				<div class="overlay"></div>
-			</div>
-		</nav>
-		<header class="header position-relative top-0 left-0">
-			<div
-				class="header__background h-100 position-absolute top-0 overflow-hidden"
-			>
-				<img src="./assets/img/curvatura.svg" alt="curvatura del fondo" />
-			</div>
-			<div class="header__content pb-5 container">
-				<div class="row">
-					<div class="col-12">
-						<h2 class="text-white display-3 mt-5">Digitalizamos tu negocio</h2>
-						<p class="text-white mt-5 col-8 offset-2">
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
-							nam totam distinctio nemo rerum laborum?
-						</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/AkumaOnlyLogo.svg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/63016631d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Akuma Software</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark position-fixed top-0 vw-100">
+      <div class="container">
+        <a href="#" class="navbar-brand p-0">
+          <img
+            class="nav-logo me-2"
+            src="assets/icons/AkumaOnlyLogo.svg"
+            alt="Akuma Software Logo"
+          />Akuma Software
+        </a>
+        <button id="nav-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-ctn ms-auto">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#servicios"
+                ><b>Servicios</b></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#portfolio"
+                ><b>Portfolio</b></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#nosotros"
+                ><b>Nosotros</b></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-primary text-white" href="#contacto"
+                ><b>Contactanos</b></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </nav>
+    <header class="header position-relative top-0 left-0">
+      <div
+        class="header__background h-100 position-absolute top-0 overflow-hidden"
+      >
+        <img src="./assets/img/curvatura.svg" alt="curvatura del fondo" />
+      </div>
+      <div class="header__content pb-5 container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-white display-3 mt-5">Digitalizamos tu negocio</h2>
+            <p class="text-white mt-5 col-8 offset-2 h4">
+              Tu sueño digital al alcance de tu mano
+            </p>
 
-						<a class="d-flex justify-content-center" href="#servicios"
-							><img
-								class=""
-								src="assets/icons/Arrow - Down Square.svg"
-								alt="Desplazarse a los servicios"
-						/></a>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="phone"></div> -->
-		</header>
-		<main class="container">
-			<section id="servicios" class="row">
-				<div class="col-12">
-					<div id="services" class="services container p-0">
-						<ul class="services__list row p-0">
-							<h2 class="display-5 my-3">¿Qué ofrecemos?</h2>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section id="portfolio" class="container p-0">
-				<h2 class="display-5 my-3">Portfolio</h2>
-				<div class="row project-list p-0"></div>
-			</section>
-			<div
-				class="clients d-flex justify-content-center align-items-center my-5"
-			></div>
-			<section class="container-fluid p-0" id="nosotros">
-				<h2 class="display-5 my-3">¿Quiénes Somos?</h2>
-				<p>
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
-					provident, repellendus eveniet optio rerum distinctio dicta ab dolore
-					voluptatem omnis blanditiis quo cum quos molestias obcaecati tenetur
-					atque. Aliquam molestiae, sequi alias fuga minus odio sint natus
-					vitae? Dolorum omnis quaerat ratione asperiores est ullam officiis ab
-					libero sunt quas.
-				</p>
-				<div class="row los-pibes my-5"></div>
-			</section>
-		</main>
-		<div class="contact-ctn mb-0">
-			<div class="container">
-				<section id="contacto" class="mt-3 py-5">
-					<div class="row pb-5">
-						<form class="col-12 col-lg-7">
-							<h2 class="display-5 my-3">Contáctanos</h2>
-							<div class="mb-3">
-								<input
-									type="text"
-									class="form-control"
-									id="nameInput"
-									placeholder="Nombre"
-									required
-								/>
-							</div>
-							<div class="row p-0">
-								<div class="mb-3 col-12 col-md-8">
-									<input
-										type="email"
-										class="form-control"
-										id="emailInput"
-										placeholder="E-mail"
-										required
-									/>
-								</div>
-								<div class="mb-3 col-12 col-md-4">
-									<input
-										type="number"
-										class="form-control"
-										id="phoneInput"
-										placeholder="Teléfono"
-									/>
-								</div>
-							</div>
-							<div class="mb-3">
-								<textarea
-									class="form-control"
-									id="messageInput"
-									placeholder="Mensaje"
-									rows="3"
-								></textarea>
-							</div>
-							<button type="submit" class="btn btn-outline-light">
-								Enviar
-							</button>
-						</form>
-						<div class="col-12 col-lg-5">
-							<h2 class="display-5 my-3">Información</h2>
-							<ul class="ps-2 contact-info"></ul>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-		<footer class="bg-primary p-2 mt-0">
-			<div class="copyright text-center text-white">
-				Copyright © 2021 Akuma Software | Buenos Aires | Argentina
-			</div>
-		</footer>
-		<script type="module" src="assets/js/index.js"></script>
-		<script src="assets/js/dependencies/bootstrap.bundle.min.js"></script>
-	</body>
+            <a class="d-flex justify-content-center" href="#servicios"
+              ><img
+                class=""
+                src="assets/icons/Arrow - Down Square.svg"
+                alt="Desplazarse a los servicios"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="phone"></div> -->
+    </header>
+    <main class="container">
+      <section id="servicios" class="row">
+        <div class="col-12">
+          <div id="services" class="services container p-0">
+            <ul class="services__list row p-0">
+              <h2 class="display-5 my-3">¿Qué ofrecemos?</h2>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="container p-0">
+        <h2 class="display-5 my-3">Portfolio</h2>
+        <div class="row project-list p-0 d-flex justify-content-center"></div>
+      </section>
+      <div
+        class="clients d-flex justify-content-center align-items-center my-5"
+      ></div>
+      <section class="container-fluid p-0" id="nosotros">
+        <h2 class="display-5 my-3">¿Quiénes Somos?</h2>
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <p>
+              Somos un joven equipo de técnicos informáticos, especialistas en
+              tecnología y desarrollo, llenos de energía y sueños con emprender
+              para ayudarte y recorrer el camino a la digitalización de tu
+              negocio.
+            </p>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="gears">
+              <img src="assets/img/gear.svg" alt="animated gear" />
+              <img src="assets/img/gear.svg" alt="animated gear 2" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row los-pibes my-5 d-flex justify-content-center"></div>
+      </section>
+    </main>
+    <div class="contact-top"></div>
+    <div class="contact-ctn mb-0">
+      <div class="container">
+        <section id="contacto" class="py-5">
+          <div class="row pb-5">
+            <form class="col-12 col-lg-7">
+              <h2 class="display-5 my-3">Contáctanos</h2>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nameInput"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+              <div class="row p-0">
+                <div class="mb-3 col-12 col-md-8">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailInput"
+                    placeholder="E-mail"
+                    required
+                  />
+                </div>
+                <div class="mb-3 col-12 col-md-4">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="phoneInput"
+                    placeholder="Teléfono"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="messageInput"
+                  placeholder="Mensaje"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-outline-light">
+                Enviar
+              </button>
+            </form>
+            <div class="col-12 col-lg-5">
+              <h2 class="display-5 my-3">Información</h2>
+              <ul class="ps-2 contact-info"></ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer class="bg-primary p-2 mt-0">
+      <div class="copyright text-center text-white">
+        Copyright © 2021 Akuma Software | Buenos Aires | Argentina
+      </div>
+    </footer>
+    <script type="module" src="assets/js/index.js"></script>
+    <script src="assets/js/dependencies/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

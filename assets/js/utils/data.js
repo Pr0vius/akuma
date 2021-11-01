@@ -3,25 +3,25 @@ const servicesData = [
 		name: "Responsive Design",
 		description:
 			"Diseñamos una página para tu negocio apta para que pueda ser vista desde cualquier dispositivo sin que la experiencia del usuario se vea perjudicada.",
-		img: "",
+		img: "./assets/icons/Responsive.svg",
 	},
 	{
 		name: "Marketing Digital",
 		description:
 			"Utilizamos las redes sociales más importantes para darle la mayor visibilidad a tu negocio y potenciar las posibilidades de ventas!",
-		img: "",
+		img: "./assets/icons/Trending.svg",
 	},
 	{
 		name: "Catálogo Online",
 		description:
 			"Nos encargamos de la creación y administración del catálogo y la publicación de los productos dentro de la página, en tus redes sociales y en MercadoLibre.",
-		img: "",
+		img: "./assets/icons/Catalogue.svg",
 	},
 	{
 		name: "Asesoramiento Online",
 		description:
 			"Te ayudamos y orientamos en el recorrido de digitalizar tu negocio para que puedas estar seguro de cada paso que das!",
-		img: "",
+		img: "./assets/icons/HappyEmoji.svg",
 	},
 ];
 const projectsData = [

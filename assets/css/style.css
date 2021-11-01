@@ -2,8 +2,9 @@
 /* Globals */
 * {
 	box-sizing: border-box;
+	font-family: "Rubik", sans-serif;
+	font-size: 1.1rem;
 }
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -19,6 +20,27 @@ ul {
 .display-5,
 .display-6 {
 	font-weight: 500;
+}
+
+*::-webkit-scrollbar {
+  width: 0.6vw;
+  min-width: 6px;
+  max-width: 10px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 20px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #444;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #aaa transparent;
+  box-sizing: border-box;
 }
 /* !Globals */
 .header__content,
@@ -244,13 +266,67 @@ ul {
 	z-index: 100 !important;
 }
 /* !PORTFOLIO */
-
+/* SERVICES */
+.service__logo {
+	height: 200px;
+}
+/* !SERVICES */
 /* ABOUT US */
 .los-pibes__img {
 	width: 250px;
 	height: 250px;
 	object-fit: cover;
 	object-position: center;
+}
+
+.gears > img{
+	width: 100px;
+}
+.gears > img:nth-child(1){
+	-o-animation-name: barrelRoll;
+	-o-animation-duration: 5s;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+
+	-moz-animation-duration: 5s;
+	-moz-animation-name: barrelRoll;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	-webkit-animation-name: barrelRoll;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	animation-name: barrelRoll;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 5s;
+
+	position: relative;
+	top: 48px;
+	left: 28px;
+}
+.gears > img:nth-child(2){
+	-o-animation-name: invertBarrelRoll;
+	-o-animation-duration: 5s;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+
+	-moz-animation-duration: 5s;
+	-moz-animation-name: invertBarrelRoll;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+
+	-webkit-animation-name: invertBarrelRoll;
+	-webkit-animation-duration: 5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+
+	animation-name: invertBarrelRoll;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 5s;
 }
 /* !ABOUT US */
 
@@ -287,7 +363,16 @@ ul {
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4582ec",endColorstr="#85a3d7",GradientType=1);
 }
+
+.contact-top{
+	height: 50px;
+	background: rgba(133, 163, 215, 1) 100%;
+	border-radius: 50% 50% 0 0
+}
 /* !Contact */
+.copyright{
+	font-size: 1rem;
+}
 @media screen and (max-width: 600px) {
 	.nav-ctn {
 		position: absolute;
@@ -376,4 +461,38 @@ ul {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+@keyframes barrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes barrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes barrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@-o-keyframes barrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes invertBarrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(-360deg); }
+}
+@-webkit-keyframes invertBarrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(-360deg); }
+}
+@-moz-keyframes invertBarrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(-360deg); }
+}
+@-o-keyframes invertBarrelRoll {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(-360deg); }
 }

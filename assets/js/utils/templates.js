@@ -1,15 +1,18 @@
 const getServiceTemplate = e => {
-	return `
-    <li class="col-12 col-md-6">
+  return `
+  <li class="col-12 col-md-5 position-relative my-3 d-flex justify-content-center">
+    <img class="service__logo" src="${e.img}" alt="${e.name}" />
+    <div class="position-absolute top-0 left-0">
       <h3 class="service__title">${e.name}</h3>
       <p class="service__description ps-2">
         ${e.description}
       </p>
+      </div>
     </li>
   `;
 };
 const getProjectCardTemplate = e => {
-	return `
+  return `
     <div class="col-12 col-xs-12 col-sm-6 col-lg-4 col-xl-3">
     <a href="${e.web}">
       <div class="project card my-2 position-relative" style="width: 100%">
@@ -27,7 +30,7 @@ const getProjectCardTemplate = e => {
   `;
 };
 const getClientsTemplate = e => {
-	return `
+  return `
     <div>
       <a href="${e.href}">
         <img class="client__logo" src="${e.img}" alt="${e.name}" />
@@ -36,8 +39,8 @@ const getClientsTemplate = e => {
     `;
 };
 const getWorkerTemplate = e => {
-	return `
-    <div class="col-12 col-md-4 text-center my-3">
+  return `
+    <div class="col-12 col-md-6 col-lg-4 text-center my-3">
       <img class="los-pibes__img rounded-circle" src="${e.img}" alt="${e.name}">
       <span class="h4 d-block my-2">${e.name}</span>
       <a href="${e.linkedinUrl}" class="btn btn-primary w-50">LinkedIn</a>
@@ -52,12 +55,12 @@ const getContactTemplate = e => {
           >${e.value}</a
         >
   </li>
-  `
-}
+  `;
+};
 export default [
-	getServiceTemplate,
-	getProjectCardTemplate,
-	getClientsTemplate,
-	getWorkerTemplate,
-  getContactTemplate
+  getServiceTemplate,
+  getProjectCardTemplate,
+  getClientsTemplate,
+  getWorkerTemplate,
+  getContactTemplate,
 ];
