@@ -430,6 +430,11 @@ ul {
   font-size: 1rem;
 }
 @media screen and (max-width: 600px) {
+	.submit-cont{
+		flex-direction: column-reverse !important;
+	}
+}
+@media screen and (max-width: 980px) {
   .nav-ctn {
     position: absolute;
     top: 0;
@@ -474,9 +479,6 @@ ul {
     background-color: #000000aa;
     z-index: 10100;
   }
-	.sm-cont{
-		flex-direction: column-reverse !important;
-	}
 }
 @media screen and (min-width: 576px) {
   .project.card > .card-img-top {

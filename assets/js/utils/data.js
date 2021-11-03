@@ -28,7 +28,7 @@ const projectsData = [
 	{
 		name: "Castro Barros 973",
 		img: "https://akumasoftware.com/assets/img/20200127191643-4dqyrkyb8-__(1849x820).png",
-		web: "https://castrobarros93.com.ar",
+		web: "https://castrobarros973.com.ar",
 	},
 	{
 		name: "El Heraldo",

@@ -14,18 +14,18 @@ const getServiceTemplate = e => {
 const getProjectCardTemplate = e => {
   return `
     <div class="col-12 col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-    <a href="${e.web}">
-      <div class="project card my-2 position-relative" style="width: 100%">
-        <img
-          src="${e.img}"
-          class="card-img-top"
-          alt="Vista previa ${e.name} "
-        />
-        <div class="card-body p-2">
-            <h5 class="card-title text-center m-0">${e.name}</h5>
-            </div>
-            </div>
-            </a>
+      <a href="${e.web}" target="_blank">
+        <div class="project card my-2 position-relative" style="width: 100%">
+          <img
+            src="${e.img}"
+            class="card-img-top"
+            alt="Vista previa ${e.name}"
+          />
+          <div class="card-body p-2">
+              <h5 class="card-title text-center m-0">${e.name}</h5>
+          </div>
+        </div>
+      </a>
     </div>
   `;
 };
