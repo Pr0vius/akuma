@@ -32,7 +32,7 @@ const getProjectCardTemplate = e => {
 const getClientsTemplate = e => {
   return `
     <div>
-      <a href="${e.href}">
+      <a href="${e.href} target="_blank"">
         <img class="client__logo" src="${e.img}" alt="${e.name}" />
       </a>
     </div>
@@ -43,7 +43,7 @@ const getWorkerTemplate = e => {
     <div class="col-12 col-md-6 col-lg-4 text-center my-3">
       <img class="los-pibes__img rounded-circle" src="${e.img}" alt="${e.name}">
       <span class="h4 d-block my-2">${e.name}</span>
-      <a href="${e.linkedinUrl}" class="btn btn-primary w-50">LinkedIn</a>
+      <a href="${e.linkedinUrl}" class="btn btn-primary w-50" target="_blank">LinkedIn</a>
     </div>
   `;
 };
@@ -51,7 +51,7 @@ const getContactTemplate = e => {
   return `
     <li class="mb-2">
       <i class="${e.faIcon}"></i>	${e.medium}:
-        <a href="${e.href}"
+        <a href="${e.href}" target="_blank"
           >${e.value}</a
         >
   </li>
