@@ -32,7 +32,7 @@ const getProjectCardTemplate = e => {
 const getClientsTemplate = e => {
   return `
     <div>
-      <a href="${e.href} target="_blank">
+      <a href="${e.href}" target="_blank">
         <img class="client__logo" src="${e.img}" alt="${e.name}" />
       </a>
     </div>
